@@ -5,10 +5,18 @@
 // Create a new array called 'faveColors' and assign it a value of your three favorite colors as strings.
 
 // CODE HERE
-
+let faveColors = ['blue', 'rose', 'orchid']
 //////////////////Step 2////////////////////
 // Create an object called 'me' that has these keys: firstName, superHeroName, homeTown, superPowers, superPowerXP, and profileImage. 
-
+const me = {
+    firstName:'Hayden',
+    superHeroName:'The Guy',
+    homeTown:'Draper',
+    superPowers:['Power1','Power2','Power3'],
+    superPowersXP: Math.floor(Math.random() * 100) + 1,
+    profileImage: 
+    
+}
 // The firstName key should have a value of your name as a string. 
 
 // The superHeroName key should be your name if you were a super hero. Feel free to jazz it up and get silly with it, e.g. "Thunderous Gas Man". 
