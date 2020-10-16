@@ -155,9 +155,9 @@ const filtered = myNumbers.filter(cb => cb > 100)
 // Next, use reduce to get the total of the numbers in the array summed together. Store the total in a new variable named 'total'. 
 
 // Code Here
-const total = myNumbers.reduce((acc, x => acc + x){
-	return acc + (x + x)
-}, 0)
+// const total = myNumbers.reduce((acc, x => acc + x){
+// 	return acc + (x + x)
+// }, 0)
 //////////////////PROBLEM 17////////////////////
 
 // Finally, use .forEach to find the index of each item in the array.
@@ -173,7 +173,9 @@ const total = myNumbers.reduce((acc, x => acc + x){
 const notGeorge = ['Louis', 'Ted', 'Bill', 'Sharon', 'Mark', 'Angela']
 
 // Code Here
-
+// const forTheLoveOfGeorge = notGeorge.map((index){
+// 	return index = 'notGeorge' 
+// })
 //////////////////PROBLEM 19////////////////////
 
 // Using the people array, filter out everyone that isn't a friend into a new array called 'enemies'. Use .filter(). 
