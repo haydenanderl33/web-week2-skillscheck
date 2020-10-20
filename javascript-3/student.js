@@ -10,13 +10,13 @@ let groceries = ["eggs", "milk", "juice"]
 //Create a variable called 'yourName' that is assigned the value of your name as a string. 
 
 // Code Here
-let yourName = 'Hayden'
+let yourName = 'Haydens'
 //////////////////STEP 3////////////////////
 //Create a function called 'setGroceryListTitle' that takes in one parameter called 'x'. The function should return a string of 'XPARAM's Grocery List'.
 
 // Code Here
 function setGroceryListTitle(x){
-    return x + 'Grocery List'
+    return `${x} Grocery List`
 }
 //////////////////STEP 4////////////////////
 //Create a function called 'addItem' that takes in one parameter called 'item'. Add the item parameter to the end of the groceries array created above.
@@ -36,7 +36,7 @@ function addItem(item){
 
 // Code Here
 function removeItem(index){
-    groceries.splice([])
+    groceries.splice(index,1)
     displayData()
 
 }
@@ -52,9 +52,9 @@ function removeItem(index){
 function checkGroceryCount(groceries){
     if(groceries.length >= 5){
         return 'That looks like a big trip'
-    } else if(groceries.lenghth = 1){
+    } else if(groceries.length = 1){
         return '1 item'
-    } else if(groceries.length > 5 || groceries.length < 1) {
+    } else if(groceries.length > 1 && groceries.length < 5) {
         return 'NUMBEROFGROCERIES items' + groceries.length
 
     }
