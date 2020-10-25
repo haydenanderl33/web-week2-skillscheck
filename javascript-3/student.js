@@ -10,13 +10,13 @@ let groceries = ["eggs", "milk", "juice"]
 //Create a variable called 'yourName' that is assigned the value of your name as a string. 
 
 // Code Here
-let yourName = 'Haydens'
+let yourName = 'Hayden'
 //////////////////STEP 3////////////////////
 //Create a function called 'setGroceryListTitle' that takes in one parameter called 'x'. The function should return a string of 'XPARAM's Grocery List'.
 
 // Code Here
 function setGroceryListTitle(x){
-    return `${x} Grocery List`
+    return `${x}'s Grocery List`
 }
 //////////////////STEP 4////////////////////
 //Create a function called 'addItem' that takes in one parameter called 'item'. Add the item parameter to the end of the groceries array created above.
@@ -36,7 +36,7 @@ function addItem(item){
 
 // Code Here
 function removeItem(index){
-    groceries.splice(index,1)
+    groceries.splice(index)
     displayData()
 
 }
@@ -49,16 +49,16 @@ function removeItem(index){
 // If the amount of groceries is between 1 and 5, return the string 'NUMBEROFGROCERIES items' with NUMBEROFGROCERIES replaced by the number of items in your groceries array.
 
 // Code Here
-function checkGroceryCount(groceries){
-    if(groceries.length >= 5){
-        return 'That looks like a big trip'
-    } else if(groceries.length = 1){
-        return '1 item'
-    } else if(groceries.length > 1 && groceries.length < 5) {
-        return 'NUMBEROFGROCERIES items' + groceries.length
-
+function checkGroceryCount(){
+    for(let i = 0; i < groceries.length; i++){
+        if(groceries.length >= 5){
+            return "That looks like a big trip"
+        } else if(groceries.length === 1){
+            return "1 item"
+        } else if(groceries.length > 1 && groceries.length < 5){
+            return `${groceries.length} items`
+        }
     }
-
 }
 //////////////////STEP 6////////////////////
 // Refresh the index.html page. You should now see the same thing you saw when you first loaded the page but you should now be able to add items to your grocery list with a dynamic total showing. If you double click on an item, it should remove that item
